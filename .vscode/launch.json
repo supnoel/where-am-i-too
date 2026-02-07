@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": ".NET Core Launch (console)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/eft-where-am-i/bin/Debug/net8.0-windows/eft-where-am-i.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/eft-where-am-i",
+            "console": "internalConsole",
+            "stopAtEntry": false
+        }
+    ]
+}

@@ -50,6 +50,7 @@ namespace eft_where_am_i
             _ = webView2_Settings.ExecuteScriptAsync($"setScreenshotPath('{escapedPath}')");
             string escapedLogPath = appSettings.log_path.Replace("\\", "\\\\");
             _ = webView2_Settings.ExecuteScriptAsync($"setLogPath('{escapedLogPath}')");
+            _ = webView2_Settings.ExecuteScriptAsync($"setDeadZonePercent({appSettings.dead_zone_percent})");
         }
 
         private async Task InitializeWebViewUI()
@@ -110,6 +111,9 @@ namespace eft_where_am_i
                         // 로그 경로 설정 전송
                         string logPath = appSettings.log_path.Replace("\\", "\\\\");
                         await webView2_Settings.ExecuteScriptAsync($"setLogPath('{logPath}')");
+
+                        // 데드존 비율 설정 전송
+                        await webView2_Settings.ExecuteScriptAsync($"setDeadZonePercent({appSettings.dead_zone_percent})");
 
                     }
                     catch (Exception ex)
@@ -185,6 +189,12 @@ namespace eft_where_am_i
 
                     case "change-log-path":
                         SelectLogFolder();
+                        break;
+
+                    case "dead-zone-changed":
+                        int deadZoneValue = message["value"]?.Value<int>() ?? 93;
+                        appSettings.dead_zone_percent = deadZoneValue;
+                        SaveSettings();
                         break;
 
                     case "auto-detect-log-path":
@@ -288,12 +298,12 @@ namespace eft_where_am_i
 
         private void lblHowToUse_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            System.Diagnostics.Process.Start("https://github.com/karpitony/eft-where-am-i/blob/main/README.md");
+            System.Diagnostics.Process.Start("https://github.com/supnoel/where-am-i-too/blob/main/README.md");
         }
 
         private void lblBugReport_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            System.Diagnostics.Process.Start("https://github.com/karpitony/eft-where-am-i/issues");
+            System.Diagnostics.Process.Start("https://github.com/supnoel/where-am-i-too/issues");
         }
 
         private void webView21_Click(object sender, EventArgs e)

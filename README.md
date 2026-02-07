@@ -1,8 +1,8 @@
 <p align="center">
 
-[![GitHub Release](https://img.shields.io/github/v/release/karpitony/eft-where-am-i?include_prereleases&logo=github)](https://github.com/karpitony/eft-where-am-i/releases/latest)
-[![GitHub total downloads](https://img.shields.io/github/downloads/karpitony/eft-where-am-i/total.svg?include_prerelease&logo=github)](https://github.com/karpitony/eft-where-am-i/releases)
-[![GitHub License](https://img.shields.io/github/license/karpitony/eft-where-am-i)](./LICENSE)
+[![GitHub Release](https://img.shields.io/github/v/release/supnoel/where-am-i-too?include_prereleases&logo=github)](https://github.com/supnoel/where-am-i-too/releases/latest)
+[![GitHub total downloads](https://img.shields.io/github/downloads/supnoel/where-am-i-too/total.svg?include_prerelease&logo=github)](https://github.com/supnoel/where-am-i-too/releases)
+[![GitHub License](https://img.shields.io/github/license/supnoel/where-am-i-too)](./LICENSE)
 [![.NET 8.0](https://img.shields.io/badge/.NET-8.0-purple?logo=dotnet)](https://dotnet.microsoft.com/download/dotnet/8.0)
 
 </p>
@@ -135,7 +135,7 @@ tarkov-market.com의 퀘스트 패널에서 선택한 퀘스트 목록을 SQLite
 
 ### 다운로드
 
-[Releases](https://github.com/karpitony/eft-where-am-i/releases/latest)에서 최신 버전의 `.zip` 파일을 다운로드하세요.
+[Releases](https://github.com/supnoel/where-am-i-too/releases/latest)에서 최신 버전의 `.zip` 파일을 다운로드하세요.
 
 1. `.zip` 파일을 다운로드합니다.
 2. 원하는 위치에 압축을 해제합니다.
@@ -228,7 +228,7 @@ PR과 Issue 기여를 환영합니다!
 
 ## 버그 신고 및 건의
 
-버그 신고, 기능 건의 등은 [Issues](https://github.com/karpitony/eft-where-am-i/issues)에서 남겨주세요.
+버그 신고, 기능 건의 등은 [Issues](https://github.com/supnoel/where-am-i-too/issues)에서 남겨주세요.
 
 ## 크레딧 및 감사
 

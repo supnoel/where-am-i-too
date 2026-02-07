@@ -1,8 +1,8 @@
 <p align="center">
 
-[![GitHub Release](https://img.shields.io/github/v/release/karpitony/eft-where-am-i?include_prereleases&logo=github)](https://github.com/karpitony/eft-where-am-i/releases/latest)
-[![GitHub total downloads](https://img.shields.io/github/downloads/karpitony/eft-where-am-i/total.svg?include_prerelease&logo=github)](https://github.com/karpitony/eft-where-am-i/releases)
-[![GitHub License](https://img.shields.io/github/license/karpitony/eft-where-am-i)](./LICENSE)
+[![GitHub Release](https://img.shields.io/github/v/release/supnoel/where-am-i-too?include_prereleases&logo=github)](https://github.com/supnoel/where-am-i-too/releases/latest)
+[![GitHub total downloads](https://img.shields.io/github/downloads/supnoel/where-am-i-too/total.svg?include_prerelease&logo=github)](https://github.com/supnoel/where-am-i-too/releases)
+[![GitHub License](https://img.shields.io/github/license/supnoel/where-am-i-too)](./LICENSE)
 [![.NET 8.0](https://img.shields.io/badge/.NET-8.0-purple?logo=dotnet)](https://dotnet.microsoft.com/download/dotnet/8.0)
 
 </p>
@@ -135,7 +135,7 @@ Click on the map to define polygonal floor zones. Holes (exclusion areas) are su
 
 ### Download
 
-Download the latest `.zip` file from [Releases](https://github.com/karpitony/eft-where-am-i/releases/latest).
+Download the latest `.zip` file from [Releases](https://github.com/supnoel/where-am-i-too/releases/latest).
 
 1. Download the `.zip` file.
 2. Extract it to your preferred location.
@@ -228,7 +228,7 @@ Contributions to `floor_db.json` with floor data for new maps are highly appreci
 
 ## Bug Reports & Suggestions
 
-Please report bugs, suggest features, or ask questions via [Issues](https://github.com/karpitony/eft-where-am-i/issues).
+Please report bugs, suggest features, or ask questions via [Issues](https://github.com/supnoel/where-am-i-too/issues).
 
 ## Credits & Acknowledgments
 
