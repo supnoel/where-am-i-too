@@ -63,6 +63,9 @@ Periodically monitors EFT game log files to detect which map you've loaded into.
 
 ### Multi-Floor Auto Detection
 
+> [!NOTE]
+> Not yet implemented. Planned for a future release.
+
 **Automatically determines your current floor based on Z-coordinate.**
 
 On multi-floor maps like Reserve, Factory, and Streets, the tool analyzes the Z-coordinate (height) from the screenshot to automatically switch between floors (e.g., ground / underground). Manual switching via `Ctrl+Numpad` hotkeys is also available.
