@@ -1,0 +1,53 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <RootNamespace>eft_where_am_i</RootNamespace>
+    <AssemblyName>eft-where-am-i</AssemblyName>
+    <ApplicationIcon>eft-where-am-i.ico</ApplicationIcon>
+
+    <!-- Product Info -->
+    <Product>EFT Where am I, too.</Product>
+    <AssemblyTitle>EFT Where am I, too.</AssemblyTitle>
+    <Version>1.1.0</Version>
+    <FileVersion>1.1.0</FileVersion>
+    <AssemblyVersion>1.1.0</AssemblyVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.2957.106" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <!-- Content files to copy to output -->
+  <ItemGroup>
+    <None Include="assets\settings.json" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="assets\images\eft-where-am-i_icon_resize.png" CopyToOutputDirectory="Always" />
+    <Content Include="assets\images\settings_icon2_resize.png" CopyToOutputDirectory="Always" />
+    <Content Include="assets\js\i18next.min.js" CopyToOutputDirectory="Always" />
+    <Content Include="assets\js\i18nextHttpBackend.min.js" CopyToOutputDirectory="Always" />
+    <Content Include="assets\css\tailwind.css" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="html\panel.html" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="html\settings.html" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="html\floor_db_editor.html" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="floor_db.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="quest_saves.json" CopyToOutputDirectory="PreserveNewest" Condition="Exists('quest_saves.json')" />
+    <None Include="translations\en.json" CopyToOutputDirectory="Always" />
+    <None Include="translations\ko.json" CopyToOutputDirectory="Always" />
+  </ItemGroup>
+
+  <!-- Tailwind CSS build targets -->
+  <Target Name="InstallNpmDependencies" BeforeTargets="BuildTailwindCss" Condition="!Exists('$(ProjectDir)node_modules')">
+    <Message Text="Running 'npm install'..." Importance="high" />
+    <Exec Command="npm install" WorkingDirectory="$(ProjectDir)" />
+  </Target>
+
+  <Target Name="BuildTailwindCss" BeforeTargets="BeforeBuild" DependsOnTargets="InstallNpmDependencies">
+    <Message Text="Building Tailwind CSS..." Importance="high" />
+    <Exec Command="npm run build:css" WorkingDirectory="$(ProjectDir)" />
+  </Target>
+
+</Project>
