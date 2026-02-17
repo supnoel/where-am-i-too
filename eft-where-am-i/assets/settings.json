@@ -2,6 +2,7 @@
   "auto_screenshot_detection": true,
   "auto_map_detection": true,
   "auto_panning": true,
+  "auto_screenshot_cleanup": false,
   "language": "ko",
   "screenshot_path": "C:\\Users\\a4330\\Documents\\Escape From Tarkov\\Screenshots",
   "log_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Escape from Tarkov\\build\\Logs",
@@ -12,7 +13,7 @@
     "OneDrive\\문서\\Escape from Tarkov\\Screenshots\\"
   ],
   "latest_map": "interchange",
-  "dead_zone_percent": 90,
+  "dead_zone_percent": 99,
   "panel_hidden_per_map": {
     "interchange": true,
     "woods": true,
