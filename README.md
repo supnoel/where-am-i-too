@@ -15,4 +15,4 @@
 
 이하의 karpitony님의 프로젝트로 이동하여 받아주시면 감사하겠습니다.
 
-https://github.com/karpitony/where-am-i
+https://github.com/karpitony/eft-where-am-i
